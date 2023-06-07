@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./fonts/Inter-Regular.ttf);
+}
+:root{
+
+    font-size: 62.5%;
+
+    --White: #fff;
+
+    --Ligth-Cyan: #e0ffff;
+    --Ligth-Cyan-2: #e1ffff;
+
+    --Argentinian-Blue: #69b4ff;
+    --Azure: #0085ff;
+    --Brandeis-Blue: #006fff;
+    --Cobalt-Blue: #004BAC;
+
+    --Cadet_Gray: #9e9e9e;
+    --Onyx: #454545;
+    --Jet: #2d2d2d;
+    --Eerie-Black: #1E1E1E;
+    
+}
+*{
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+html,
+body{
+    color: var(--White);
+    font-size: 1.6rem;
+    font-family: "Inter";
+}
+.main{
+    min-height: 100vh;
+    background-color: var(--Eerie-Black);
+}
+.main__div__form{
+    max-width: 50vw;
+    margin: auto;
+}
+.main__div__form__filedset{
+    display: grid;
+    border: none;
+}
+.main__div__form__filedset__label,
+.main__div__form__filedset__select,
+.main__div__form__filedset__input:not([type=submit]){
+    display: block;
+    width: 100%;
+    height: 2.5rem;
+}
+.main__div__form__filedset__input:not([type=submit]),
+.main__div__form__filedset__select,
+.main__div__form__filedset__input[type=submit]{
+    outline: none;
+    border: none;
+}
+.main__div__form__filedset__input:not([type=submit]),
+.main__div__form__filedset__select{
+    background-color: var(--Ligth-Cyan);
+    transition: all .2s ease;
+    border-radius: .5rem;
+}
+.main__div__form__filedset__input:not([type=submit]):focus{
+    transform: scale(1.01);
+}
+.main__div__form__filedset__label{
+    margin-bottom: .5rem;
+}
+.main__div__form__filedset__input{
+    margin-bottom: 1rem;
+}
+.main__div__form__filedset__input[type=submit]{
+    width: 50%;
+    justify-self: center;
+    padding: 1rem 0;
+    color: var(--White);
+    border-radius: .5rem;
+    background-color: var(--Brandeis-Blue);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.main__div__form__filedset__input[type=submit]:hover{
+    background-color: var(--Azure);
+    transform: scale(0.99);
+}
+.main__div__form__filedset__div{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.main__div__form__filedset__div__a{
+    background-color: var(--Jet);
+    border:  .2rem solid var(--Onyx);
+    border-radius: .5rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 70%;
+}
+
+.main__div__div__table{
+    width: 95%;
+    margin: auto;
+    margin-top: 5rem;
+    text-align: center;
+}
+.main__div__div__table a{
+    text-decoration: underline;
+}
+.main__div__div{
+    overflow: auto;
+}
